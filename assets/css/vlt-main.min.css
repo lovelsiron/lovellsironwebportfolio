@@ -2307,6 +2307,7 @@ textarea:focus::-webkit-input-placeholder {
     border-radius: 0.3125rem;
     background-color: #5b1d1a;
 }
+
 .vlt-partners {
     display: grid;
     margin: 0 -3.125rem;
