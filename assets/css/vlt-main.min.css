@@ -626,7 +626,7 @@
 }
 ::-moz-selection {
     color: #1f1f1f;
-    background-color: #ce1616;;
+    background-color: #ce1616;
 }
 ::selection {
     color: #1f1f1f;
@@ -634,7 +634,7 @@
 }
 ::-moz-selection {
     color: #1f1f1f;
-    background-color: #ce1616;;
+    background-color: #ce1616;
 }
 body {
     font-family: "Roboto", sans-serif;
