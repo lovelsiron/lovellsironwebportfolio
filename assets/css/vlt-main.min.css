@@ -706,11 +706,45 @@ h1 {
 .h1.vlt-large-heading,
 h1.vlt-large-heading {
     max-width: 100%;
-    font-size: 7.4rem;
+    font-size: 6.9rem;
     letter-spacing: -2px;
     font-weight: 600;
 }
-
+.h1.vlt-large-headinglogos,
+h1.vlt-large-headinglogos {
+    max-width: 100%;
+    font-size: 6rem;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+.h1.vlt-large-headinglogos1,
+h1.vlt-large-headinglogos1 {
+    max-width: 100%;
+    font-size: 5.5rem;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+.h1.vlt-large-headinglogos2,
+h1.vlt-large-headinglogos2 {
+    max-width: 100%;
+    font-size: 5rem;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+.h1.vlt-large-headinglogos3,
+h1.vlt-large-headinglogos3 {
+    max-width: 100%;
+    font-size: 3.9rem;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
+.h1.vlt-large-headinglogos4,
+h1.vlt-large-headinglogos4 {
+    max-width: 100%;
+    font-size: 3.5rem;
+    letter-spacing: -2px;
+    font-weight: 600;
+}
 .h2,
 h2 {
     font-size: 4rem;
@@ -992,6 +1026,10 @@ textarea:focus::-webkit-input-placeholder {
     padding-right: 30px;
     padding-left: 0px;
 }
+.container2 {
+    padding-right: 70px;
+    padding-left: 70px;
+}
 @media (min-width: 1200px) {
     .container {
         max-width: 1110px;
@@ -1000,6 +1038,12 @@ textarea:focus::-webkit-input-placeholder {
         max-width: 1110px;
     }
 }
+@media (min-width: 1200px) {
+    .container2 {
+        max-width: 1900px;}
+   
+}
+
 .vlt-main {
     position: relative;
     overflow: hidden;
@@ -2273,7 +2317,7 @@ textarea:focus::-webkit-input-placeholder {
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     border-radius: 0.3125rem;
-    background-color: #1f1f1f;
+    background-color: #c7c7c7;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -2305,7 +2349,7 @@ textarea:focus::-webkit-input-placeholder {
     -ms-transform-origin: top;
     transform-origin: top;
     border-radius: 0.3125rem;
-    background-color: #5b1d1a;
+    background-color: #971e18;
 }
 
 .vlt-partners {
@@ -2483,8 +2527,8 @@ textarea:focus::-webkit-input-placeholder {
     transition: all 0.3s;
     color: #1f1f1f;
     background-color: transparent;
-    -webkit-box-shadow: inset 0 0 0 1px #1f1f1f;
-    box-shadow: inset 0 0 0 1px #1f1f1f;
+    -webkit-box-shadow: inset 0 0 0 1px #e6e6e6;
+    box-shadow: inset 0 0 0 1px #cfcfcf;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
