@@ -626,15 +626,15 @@
 }
 ::-moz-selection {
     color: #1f1f1f;
-    background-color: #5b1d1a;
+    background-color: #ce1616;;
 }
 ::selection {
     color: #1f1f1f;
-    background-color: #5b1d1a;
+    background-color: #ce1616;
 }
 ::-moz-selection {
     color: #1f1f1f;
-    background-color: #5b1d1a;
+    background-color: #ce1616;;
 }
 body {
     font-family: "Roboto", sans-serif;
