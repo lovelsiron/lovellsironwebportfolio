@@ -519,15 +519,15 @@
                     <div class="vlt-animated-block" data-animation-name="fadeInUpSm" style="animation-delay:.1s; animation-duration:700ms;">
                       <h4>Let's collaborate and turn your ideas into something beautiful. <span class="has-accent-color">Always for the art.</span></h4>
                       <div class="vlt-gap-20"></div>
-                      <form action="https://formspree.io/f/xvodzqdn" method="POST" class="vlt-contact-form" >
+                      <form id="my-form" action="https://formspree.io/f/xvodzqdn" method="POST" class="vlt-contact-form" >
                         <div class="vlt-form-group">
                           <input type="text" id="name" name="name" required="required" placeholder="Your Name">
                         </div>
                         <div class="vlt-form-group">
-                          <input type="email" id="email" name="_replyto" required="required" placeholder="Your Email">
+                          <input type="email" id="email" name="email" required="required" placeholder="Your Email">
                         </div>
                         <div class="vlt-form-group">
-                          <textarea name="message" id="message" rows="3" placeholder="Message"></textarea>
+                          <input type="text" name="message" id="message" rows="3" placeholder="Message"></input>
                         </div>
                         <!--Button-->
                         <button type="submit" value="Send" class="vlt-btn vlt-btn--primary vlt-btn--md">Submit</button>
@@ -556,6 +556,28 @@
     <script src="assets/scripts/vlt-plugins.min.js"></script>
     <script src="assets/scripts/vlt-helpers.js"></script>
     <script src="assets/scripts/vlt-controllers.min.js"></script>
+    <script>
+      var form = document.getElementById("my-form");
+      
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+              'Accept': 'application/json'
+          }
+        }).then(response => {
+          status.innerHTML = "Thanks for your submission!";
+          form.reset()
+        }).catch(error => {
+          status.innerHTML = "Oops! There was a problem submitting your form"
+        });
+      }
+      form.addEventListener("submit", handleSubmit)
+  </script>
   </body>
 
 
